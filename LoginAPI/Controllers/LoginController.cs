@@ -40,18 +40,5 @@ namespace LoginAPI.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
-        [HttpGet]
-        public IActionResult LoginGet()
-        {
-            try
-            {
-                return Ok("Successful");
-            }
-            catch (Exception ex)
-            {
-                // Handle any exceptions here
-                return StatusCode(500, $"An error occurred: {ex.Message}");
-            }
-        }
     }
 }
