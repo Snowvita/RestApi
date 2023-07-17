@@ -112,7 +112,7 @@ namespace LoginAPI.Controllers
             public string ?NewPassword { get; set; }
         }
 
-        /*[HttpPatch("{username}")]
+        [HttpPatch("{username}")]
         public IActionResult UpdatePassword(string username, [FromBody] UpdatePasswordRequest newPasswordRequest)
         {
             try
@@ -166,6 +166,6 @@ namespace LoginAPI.Controllers
                 // Handle any exceptions here
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
-        }*/
+        }
     }
 }
